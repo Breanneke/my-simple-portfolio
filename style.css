@@ -265,21 +265,21 @@ span {
    line-height: 2;
 }
 
-/* skills */
-.skill-title {
+/* service */
+.service-title {
 width: 100%;
 align-items: center;
 justify-content: center;
 background-color: transparent;
 }
-.skill-title h1{
+.service-title h1{
    display: flex;
    text-align: center;
    align-items: center;
    margin: 20px auto;
    justify-content: center;
 }
-.skill-title p{
+.service-title p{
    display: flex;
    text-align: center;
    align-items: center;
@@ -289,7 +289,7 @@ background-color: transparent;
    font-weight: bold;
 }
 
-.skills-container{
+.service-container{
    display: flex;
    flex-wrap: wrap;
    margin: 30px auto;
@@ -301,7 +301,7 @@ background-color: transparent;
    align-items: center;
 
 }
-.skills-content{
+.service-content{
    width: 30%;
    height: 400px;
    background-color: #2b4030;
@@ -311,17 +311,17 @@ background-color: transparent;
    align-items: center;
    margin: 0 20px;
 }
-.skills-content:hover{
+.service-content:hover{
    background-color:transparent;
    transition-behavior:initial;
 }
-.skills-content h2{
+.service-content h2{
    align-items: center;
    justify-content: center;
    text-align: center;
    margin: 10px auto;
 }
-.skills-content i{
+.service-content i{
    display: flex;
    font-size: 30px;
    align-items: center;
@@ -329,9 +329,74 @@ background-color: transparent;
    color: #f06;
    margin-bottom: 20px;
 }
-.skills-content p{
+.service-content p{
    font-size: 1.05em;
    text-align: center;
+}
+.hero{
+   width: 100%;
+   min-height: 100vh;
+   background-position: center;
+   padding: 10px 8%;
+   text-align: center;
+   color: #fff;
+}
+nav{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+}
+.logo2{
+   width: 140px;
+   cursor: pointer;
+}
+.btn2{
+   background: linear-gradient(#6a33ff, #351a80);
+   color: #fff;
+   font-size: 16px;
+   padding: 16px 30px;
+   border-radius: 30px;
+   border: 0;
+   outline: 0;
+   cursor: pointer;
+}
+.content{
+   margin: 15% auto 0;
+}
+.content h1{
+   font-size: 75px;
+   font-weight: 500;
+}
+
+form{
+   width: 90%;
+   max-width: 600px;
+   height: 65px;
+   background: #fff;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   border-radius: 40px;
+   margin-top: 40px;
+   margin-bottom: 20px;
+}
+form input{
+   flex: 1;
+   background: transparent;
+   padding: 20px 30px;
+   border: 0;
+   outline: 0;
+   font-size: 16px;
+}
+form .btn2{
+   padding: 0;
+   border-radius: 31px;
+   height: 65px;
+   width: 150px;
+}
+form input::placeholder{
+   font-size: 18px;
 }
 
 @keyframes slideTop {
@@ -408,155 +473,67 @@ background-color: transparent;
       transform: scale(1);
    }
 }
-
-@media (max-width: 936px) {
-   .home {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+@media (max-width:480px) {
+   .service-content{
       width: 100%;
    }
-
-   .home-sci a {
-      display: inline-flex;
-      padding: 20px 10px;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-   }
-
-
-}
-   .footer-icons a {
-      display: inline-flex;
-      padding: 20px 10px;
-      justify-content: center;
-      align-items: center;
-      width: 40px;
-      height: 40px;
-   }
-
-   .home-sci a:hover {
-      background: transparent;
-   }
-
-   .footer-icons a:hover {
-      background: transparent;
-   }
-
-   .home-content {
-      width: 90%;
-      align-items: center;
-      height: 300px;
-      justify-content: center;
-      text-align: center;
-   }
-}
-
-
-@media (max-width: 778px) {
-   .header {
-      display: flex;
-      flex-direction: column;
-   }
-}
-
-@media (max-width: 621px) {
-   .footer-content {
-      margin-top: 10px;
-   }
-}
-
-@media (max-width: 619px) {
-   .navbar a {
-      display: flex;
-      flex-direction: column;
-      padding: 20px;
-   }
-
-   .footer-icons a {
-      width: 100px;
-      height: 30px;
-   }
-
-   .glowing-circle {
-      width: 100px;
-      height: 100px;
-   }
-
-   .image img {
-      width: 300px;
-   }
-
-}
-
-@media (max-width: 436px) {
-   .footer-icons a {
-      background-color: transparent;
-   }
-}
-
-@media (max-width: 1078px) {
-   .about-us {
-      width: 50%;
-      height: 450px;
-   }
-}
-
-@media (max-width: 1007px) {
-   .about-us {
-      width: 50%;
-      height: 470px;
-   }
-}
-
-@media (max-width: 360px) {
-   .about-us {
-      width: 90%;
-      height: 590px;
-      margin: 60px auto;
-   }
-}
-
-@media (max-width: 873px) {
-   .about-us {
-      width: 50%;
-      height: 500px;
-      margin: 60px auto;
-   }
-}
-
-@media (max-width: 412px) {
-   .about-us {
-      width: 90%;
-      height: 590px;
-      margin: 60px auto;
-   }
-}
-@media (max-width: 480px) {
-   .skills-container{
+   .service-container{
       height: 2500px;
    }
-   .skills-content{
+
+   .about-us{
+      width: 90%;
+   }
+
+   .header{
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
    }
-}
-@media (max-width: 767px) {
-   .skills-container{
-      height: 1600px;
+
+   .navbar a{
+      margin: 0 auto;
    }
-   .skills-content{
-      width: 43%;
-      height: 500px;
+
+   .home{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
    }
-}
-@media (max-width: 1024px) {
-   .skills-container{
-      height: 1600px;
+
+   .home-image {
+      width: 310px;
+      height: 310px;
+      opacity: 0;
+      animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+      animation-delay: 2.1s, 3.1s;
    }
-   .skills-content{
-      width: 43%;
-      height: 500px;
+
+   .glowing-circle .image {
+      position: relative;
+      width: 310px;
+      height: 310px;
+      border-radius: 50%;
+      overflow: hidden;
+   }
+   
+   .home-sci{
+      display: flex;
+      font-size: 18px;
+   }
+   .home-sci a{
+      margin: 30px 20px;
+   }
+
+   .home-content{
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 10px 0 0 20px;
+   }
+
+   .footer-content{
+      margin: 10px;
    }
 }
