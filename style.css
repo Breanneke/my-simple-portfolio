@@ -213,7 +213,7 @@ span {
    display: flex;
    align-items: center;
    justify-content: space-around;
-   width: 30%;
+   width: 50%;
    height: 100px;
 }
 
@@ -535,5 +535,9 @@ form input::placeholder{
 
    .footer-content{
       margin: 10px;
+   }
+
+   .footer-icons a{
+      margin: 20px 10px;
    }
 }
