@@ -473,7 +473,7 @@ form input::placeholder{
       transform: scale(1);
    }
 }
-@media (max-width:480px) {
+@media (max-width:600px) {
    .service-content{
       width: 100%;
    }
