@@ -396,7 +396,10 @@ form .btn2{
 form input::placeholder{
    font-size: 18px;
 }
-
+.btn2 a{
+   text-decoration: none;
+   color: #fff;
+}
 @keyframes slideTop {
    0% {
       opacity: 0;
@@ -537,6 +540,10 @@ form input::placeholder{
 
    .footer-icons a{
       margin: 20px 10px;
+   }
+
+   .content form{
+      width: 100%;
    }
 }
 
